@@ -1,0 +1,10 @@
+sudo apt update
+sudo apt install build-essential
+gcc -o server server.c -pthread
+./server
+sudo apt install curl
+curl -i http://localhost:8080/ping
+curl -i http://localhost:8080/echo
+curl -i -X POST -H "Content-Length: 11" -d "Hello World" http://localhost:8080/write
+curl -i http://localhost:8080/read
+curl -i http://localhost:8080/stats
