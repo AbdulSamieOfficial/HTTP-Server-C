@@ -21,6 +21,13 @@ To compile the server, run the following command in your terminal:
 ```
 gcc -o server server.c -lpthread
 ```
+This will create an executable named server in the current directory. If you have GNU Make installed, you can alternatively run make to build the server.
+
+# Usage
+To start the server, run the following command in your terminal:
+'''
+./server
+'''
 
 
 
